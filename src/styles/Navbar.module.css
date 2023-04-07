@@ -31,6 +31,7 @@
   font-weight: var(--light-weight);
 }
 
+/* TODO: bold not working */
 .logo {
   font-size: 1.375rem;
   color: var(--color-primary);

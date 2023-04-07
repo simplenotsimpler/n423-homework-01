@@ -1,0 +1,11 @@
+.footer {
+  height: 74px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-outer);
+  font-family: "Roboto";
+  font-weight: var(--light-weight);
+  letter-spacing: 1.6px;
+  line-height: 21px;
+}
