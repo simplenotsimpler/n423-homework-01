@@ -3,9 +3,12 @@
   gap: 56px;
 }
 
+/* TODO: this is oval not circle */
 .roundImg {
   width: 159px;
   height: 159px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .cardBody {
   display: flex;
