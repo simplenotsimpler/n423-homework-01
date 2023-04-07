@@ -1,30 +1,12 @@
+import Card from "@/components/Card.jsx";
 import styles from "../styles/About.module.css";
-import CardStyles from "../styles/Card.module.css";
+import owners from "@/data/owners.js";
 
 const About = () => {
-  return (
-    <section className={styles.about}>
-      <article className={CardStyles.card}>
-        <img
-          src="/images/owner.jpg"
-          className={CardStyles.roundImg}
-          alt="Owner"
-        />
-        <div className={CardStyles.cardBody}>
-          <h1 className={CardStyles.cardTitle}>The Owner:</h1>
-          <p className={CardStyles.cardText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            ac bibendum quam, vel finibus leo. Morbi mattis, odio sed fermentum
-            convallis, dolor lorem porta magna, eu consequat lorem magna a
-            turpis. Vivamus ultrices elit risus, at egestas enim tempus non.
-            Vivamus molestie lacinia dui in tincidunt. Morbi vulputate accumsan
-            scelerisque. Nunc justo turpis, blandit ac vestibulum congue,
-            ullamcorper mattis orci.
-          </p>
-        </div>
-      </article>
-    </section>
-  );
+  let profileCards = owners.map((el) => {
+    return <Card title={el.title} bio={el.bio} imgName={el.imgName}/>;
+  });
+  return <section className={styles.about}>{profileCards}</section>;
 };
 
 export default About;
