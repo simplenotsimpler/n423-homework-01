@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-outer);
+  height: 70px;
+}
+
+.navmenu li a {
+  text-decoration: none;
+}
+
+.navmenu {
+  display: flex;
+  gap: 5.75rem;
+}
+
+.linkActive {
+  color: var(--color-primary);
+}
+
+.linkInactive {
+  color: var(--color-dark);
+}
+
+.logo {
+  font-size: 1.375rem;
+  color: var(--color-primary);
+}
