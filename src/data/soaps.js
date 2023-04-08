@@ -21,3 +21,5 @@ const soaps = [
       "Vivamus nisl elit, mollis ut magna sit amet, luctus pulvinar velit. Nam egestas velit diam, efficitur lobortis magna pretium a. Mauris eu posuere nisi, in condimentum tortor. In consectetur blandit lacus ut pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
   },
 ];
+
+export default soaps;
