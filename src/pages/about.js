@@ -4,7 +4,7 @@ import owners from "@/data/owners.js";
 
 const About = () => {
   let profileCards = owners.map((el) => {
-    return <Card title={el.title} bio={el.bio} imgName={el.imgName}/>;
+    return <Card title={el.title} text={el.bio} imgName={el.imgName}/>;
   });
   return <section className={styles.about}>{profileCards}</section>;
 };

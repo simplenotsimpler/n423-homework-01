@@ -1,6 +1,6 @@
 import CardStyles from "../styles/Card.module.css";
 
-const Card = ({ title, bio, imgName }) => {
+const Card = ({ title, text, imgName }) => {
   return (
     <article className={CardStyles.card}>
       <img
@@ -10,7 +10,7 @@ const Card = ({ title, bio, imgName }) => {
       />
       <div className={CardStyles.cardBody}>
         <h1 className={CardStyles.cardTitle}>{title}</h1>
-        <p className={CardStyles.cardText}>{bio}</p>
+        <p className={CardStyles.cardText}>{text}</p>
       </div>
     </article>
   );
