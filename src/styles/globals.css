@@ -46,15 +46,13 @@ ul {
 }
 
 /* font faces */
-/* NOTE: Using just /fonts for path did not work for me (FF froze at first). Font loaded after I tried in Chrome (probably b/c Chrome downloaded Roboto for computer??). Thought Ty put in public??
-Fix is to use the relative path up to public. */
-
 /* NOTE: there is a bug with the browser freezing:
   https://github.com/vercel/next.js/issues/10061
   This is particularly noticeable with working with traditional font files
 */
 
 /* Roboto */
+/* Order is fragile and struggling to get both the Bold & light to work */
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto/Roboto-Regular.ttf");
